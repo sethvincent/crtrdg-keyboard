@@ -57,23 +57,23 @@ var keys = keyboard.keys;
 
 // you can listen for keydown & keyup events
 keyboard.on('keydown', function(key){
-  if (key === keys.up_arrow){
-    console.log('Yep! That is the up arrow!');
+  if (key === 'A'){
+    console.log('Yep! That is the A key!');
   }
 });
 
 keyboard.on('keyup', function(key){
-  if (key === keys.up_arrow){
-    console.log('Oh, you stopped pressing the up arrow.');
+  if (key === 'A'){
+    console.log('Oh, you stopped pressing the A key.');
   }
 });
 
 // alternately, you can check the keyboard.keysDown object inside of an update listener. 
-// this is particularly useful if you have a player entitity and you want it's behavior
+// this is the recommended approach if you have a player entitity and you want it's behavior
 // to change based on keyboard input
 game.on('update', function(interval){
-  if (keys.down_arrow in keyboard.keysDown){
-    console.log('the down arrow is being pressed down!');
+  if ('B' in keyboard.keysDown){
+    console.log('the B key is being pressed down!');
   }
 });
 ```
