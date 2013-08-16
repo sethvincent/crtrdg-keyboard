@@ -39,7 +39,7 @@ npm install -g browserify beefy
 var Game = require('crtrdg-gameloop');
 
 // require crtrdg-keyboard
-var Keyboard = require('./index');
+var Keyboard = require('crtrdg-keyboard');
 
 // create a new game
 var game = new Game({
