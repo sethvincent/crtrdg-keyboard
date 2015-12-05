@@ -1,10 +1,10 @@
 {
   "name": "crtrdg-keyboard",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "keyboard module for crtrdg",
   "main": "index.js",
   "scripts": {
-    "test": "beefy test.js:bundle.js --live"
+    "test": "budo example.js --live"
   },
   "repository": {
     "type": "git",
@@ -27,10 +27,11 @@
   },
   "license": "MIT",
   "dependencies": {
+    "eventemitter2": "^0.4.14",
     "inherits": "~2.0.0",
-    "vkey": "0.0.2"
+    "vkey": "1.0.0"
   },
   "devDependencies": {
-    "crtrdg-gameloop": "0.0.1"
+    "crtrdg-gameloop": "1.0.0"
   }
 }
